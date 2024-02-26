@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            F1 WORLD - INICIO
+        </title>
+        <link rel="stylesheet" href="diseño.css">
+    </head>
+    <body>
+        <h1 style="color:rgb(0, 0, 0)", id="titulo"> F1 WORLD <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/2560px-F1.svg.png" height="14" id="logo"></h1>
+        <nav>
+            <ul class="menu">
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="campeones.html">Campeones Mundiales</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+             <li><a href="desafio.html">Desafío</a></li>
+            </ul>
+        </nav>
+        <p>En esta sección <strong>pondremos a prueba tu conocimiento</strong> sobre el apasionante mundo de la Fórmula 1 con un minijuego. ¿Eres un verdadero fanático de este deporte? ¡Vamos a comprobarlo! Tu desafío consistirá en <strong>acertar los dorsales que llevan los pilotos</strong> que han disputado al menos una carrera durante la temporada 2023. ¿Estás listo para enfrentarte a este emocionante reto? 🏎️💨 </p> <br>
+        <p id = "texto"> </p> <br>
+        <input type="text" id="respuesta" size="5" maxlength="2"> </input> <br>
+        <button onclick=verificar() id="boton1"> Verificar</button>
+        <p id = "correccion"> </p>
+        <br><p> Además, para todos aquellos curiosos, a continuación encontrarán <strong>un desplegable con el registro de todas temporadas llevadas a cabo en la historia</strong> de esta categoría. Al seleccionar un año, podrá acceder a la clasificación de pilotos de ese año, así como alguna característica de cada participante.🔍 Así que, si eres un apasionado de la Fórmula 1 o simplemente te intriga el mundo de las carreras, <strong>¡no dudes en explorar más sobre tus pilotos favoritos!</strong>🏁</p>
+        <p> <strong>Elija la temporada de la que desee obtener más información. </strong> Es importante destacar que tomará unos segundos en cargar la información.  </p>
+        <select id="desplegable"> </select>
+        <table id="tabla">
+            <thead>
+                <th> Posición</th>
+                <th> Piloto</th>
+                <th> Nacionalidad</th>
+                <th> Puntos</th>
+            </thead>
+        </table>
+        <br> <br>
+
+        <nav>
+            <ul class="menu_abajo">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://www.youtube.com/@Formula1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" width="50" id="rrss"></a></li>
+                <li><a href="https://www.instagram.com/f1/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" width="25" id="rrss"></a></li>
+                <li><a href="https://twitter.com/F1" target="_blank"><img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" width="35" id="rrss"></a></li>
+            </ul>
+        </nav>
+        <script src="index.js"></script> 
+    </body>
+</html>
