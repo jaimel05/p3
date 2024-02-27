@@ -17,7 +17,7 @@ let dorsal = 0;
 
 const mostrarPregunta = function(nombre, apellido) {
     correccion.textContent = "";
-    texto.textContent = `¿Qué dorsal lleva en su monoplaza ${nombre} ${apellido}?`; //impportante el uso de `` en vez de ''
+    texto.textContent = `¿Qué dorsal lleva en su monoplaza ${nombre} ${apellido}?`; //importante el uso de `` en vez de ''
 }
 
 const actualizarPiloto = function(nombre, apellido){
@@ -30,7 +30,7 @@ const actualizarDorsal = function(numero){
 }
 
 const nuevaPregunta = function() { //llamada API then/catch
-        fetch(`http://ergast.com/api/f1/2023/drivers.json`).then(respuesta => { 
+        fetch(`https://ergast.com/api/f1/2023/drivers.json`).then(respuesta => { 
           if (respuesta.ok) {
             return respuesta.json(); 
           }
@@ -45,7 +45,7 @@ const nuevaPregunta = function() { //llamada API then/catch
 
 const actualizarDesplegable = async function(valor){ //llamada API async/wait
     try{
-        const respuesta = await fetch(`http://ergast.com/api/f1/${valor}/driverStandings.json`);
+        const respuesta = await fetch(`https://ergast.com/api/f1/${valor}/driverStandings.json`);
         if (respuesta.ok){ //verifica si la respuesta es correcta
             const objeto2 = await respuesta.json(); //convierte la respuesta a formato JSON
 
